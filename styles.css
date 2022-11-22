@@ -5,7 +5,7 @@ body {
     height: 100vh;
     color: white;
     
-    background: url("desktop/background.jpg") fixed;
+    background: url("desktop/background_desktop.jpg") fixed;
     background-position: center;
     background-size: cover;
     font-family: 'Barlow Condensed';
@@ -66,9 +66,8 @@ nav div:nth-of-type(4):hover {
 .best {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto auto auto;
 
-    
+    gap: 10px;
     padding: 10px;
     box-sizing: border-box;
     height: 100%;
@@ -151,8 +150,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px; 
-    
-    margin: 10px 0;
 }
 
 .song_list h2 {
@@ -198,7 +195,7 @@ img {
     display: grid;
     align-content: center;
     padding: 40px 10px;
-    border-radius: 20px 0 20px 20px;
+    border-radius: 15px 0 15px 15px;
 }
 
 .empty {
@@ -213,7 +210,7 @@ img {
     padding: 40px 10px;
     display: grid;
     align-content: center;
-    border-radius: 20px 20px 20px 0;
+    border-radius: 15px 15px 15px 0;
 }
 
 .harrys_house_producer {
@@ -224,7 +221,7 @@ img {
     color: #e1caa9;
     display: grid;
     align-content: end;
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0 15px 15px 15px;
 
     background-image: url("desktop/producer.jpg");
     background-position: center;
@@ -239,7 +236,7 @@ img {
     color: #e1caa9;
     display: grid;
     align-content: center;
-    border-radius: 20px 20px 0 20px;
+    border-radius: 15px 15px 0 15px;
 }
 
 .anecdotes li {
@@ -250,5 +247,119 @@ img {
     display: none;
 }
 
+.song_list3 {
+    color: #cf7f8a;
+    background-color: #a7dbe7;
+    border-bottom-left-radius: 15px;
+}
+
+.song_list4 {
+    color: #cf7f8a;
+    background-color: #a7dbe7;
+    border-bottom-right-radius: 15px;
+}
+
+.best_pop_solo {
+    grid-column: 1 / span 2;
+
+    background-color: #cf7f8a;
+    color: #a7dbe7;
+    padding: 40px 10px;
+    border-radius: 15px 15px 15px 0;
+    display: grid;
+    align-content: center;
+}
+
+.fine_line_musically {
+    background-color: #cf7f8a;
+    color: #a7dbe7;
+    padding: 40px 10px;
+    border-radius: 15px 15px 15px 0;
+    display: grid;
+    align-content: center;
+}
+
+.fine_line_producer {
+    grid-column: span 2;
+
+    color: black;
+    padding: 40px 10px;
+    border-radius: 0 15px 15px 15px;
+    display: grid;
+    align-content: end;
+    background-image: url("desktop/fine_line_producer.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.most_popular_song {
+    background-color: #cf7f8a;
+    color: #a7dbe7;
+    padding: 40px 10px;
+    border-radius: 15px 15px 15px 0;
+    display: grid;
+    align-content: center;
+}
+
+@media (min-width: 1111px) {
+
+}
 
 
+@media (max-width: 800px) {
+    body {
+        background: url("tablet/background_tablet.jpg") fixed;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 12vw;
+    }
+    .cover {
+        grid-column: 1;
+    }
+    img {
+        border-radius: 15px 0 0 15px;
+    }
+    .show_not_hover:hover {
+        opacity: 1;
+    }
+    .album_data {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+    .song_list {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .song_list1, .song_list3{
+        border-radius: 0 15px 0 0;
+    }
+    .anecdotes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .album_of_the_year {
+        border-radius: 15px 0 15px 15px;
+    }
+    .harrys_house_musically {
+        grid-column: 3 / span 2;
+    }
+    .harrys_house_producer {
+        grid-column: 2;
+        height: 80px;
+    }
+    .streams {
+        grid-column: 3;
+        border-radius: 15px 15px 0 15px;
+    }
+    .fine_line_musically {
+        border-radius: 0 15px 15px 15px;
+    }
+    .fine_line_producer {
+        grid-column: 2 / span 2;
+        height: 80px;
+    }
+    .most_popular_song {
+        border-radius: 15px 15px 0 15px;
+    }
+}
