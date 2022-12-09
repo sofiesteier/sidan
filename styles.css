@@ -301,7 +301,26 @@ img {
     align-content: center;
 }
 
+footer {
+    padding-top: 50px;
+}
+
 @media (min-width: 1111px) {
+    header h1 {
+        font-size: 77px;
+    }
+    nav div {
+        font-size: 27px;
+    }
+    .album_data h1 {
+        font-size: 44px;
+    }
+    .album_data h2 {
+        font-size: 27px;
+    }
+    .musicians p {
+        font-size: 16px;
+    }
 
 }
 
@@ -362,4 +381,50 @@ img {
     .most_popular_song {
         border-radius: 15px 15px 0 15px;
     }
+}
+
+@media (max-width: 500px) {
+    body {
+        background: url("phone/background_phone.jpg") fixed;
+    }
+    body > div {
+        padding: 0;
+    }
+    .best {
+        grid-template-columns: 1fr;
+    }
+    img {
+        border-radius: 15px 15px 0 0;
+    }
+    .song_list {
+        grid-row: 2;
+        grid-column: 1;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+    }
+    .song_list1, .song_list3 {
+        border-radius: 0 0 0 15px;
+    }
+    .song_list h2 {
+        font-size: 20px;
+    }
+    .song_list ul {
+        font-size: 14px;
+    }
+    .album_data {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .anecdotes {
+        grid-column: 1;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .harrys_house_musically {
+        grid-column: 2 / span 2;
+    }
+    .fine_line_producer {
+        grid-column: 1 / span 2;
+    }
+
 }
