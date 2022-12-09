@@ -8,6 +8,7 @@ body {
     background: url("desktop/background_desktop.jpg") fixed;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Barlow Condensed';
 }
 
@@ -95,7 +96,6 @@ nav div:nth-of-type(4):hover {
 .album_data h2 {
     font-size: 2.5vw;
     margin-top: 0px;
-    margin-bottom: 20px;
 }
 
 .musicians, .album_description {
@@ -113,8 +113,8 @@ nav div:nth-of-type(4):hover {
     margin-top: 0;
 }
 
-.album_description {
-    margin: 30px 10px 0 0;
+.album_description p {
+    margin: 20px 0 0 0;
 }
 
 
@@ -155,7 +155,7 @@ img {
 .song_list h2 {
     font-size: 1.5vw;
     margin-bottom: 0;
-    padding-left: 15px;
+    padding-left: 18px;
 }
 
 .song_list ul {
@@ -303,23 +303,57 @@ img {
 
 footer {
     padding-top: 50px;
+    font-size: 1.5vw;
 }
 
 @media (min-width: 1111px) {
     header h1 {
-        font-size: 77px;
+        font-size: 77.5px;
     }
     nav div {
-        font-size: 27px;
+        font-size: 27.5px;
     }
     .album_data h1 {
         font-size: 44px;
     }
     .album_data h2 {
-        font-size: 27px;
+        font-size: 28px;
     }
-    .musicians p {
-        font-size: 16px;
+    .musicians,
+    .album_description,
+    .song_list h2,
+    .anecdotes,
+    footer {
+        font-size: 16.5px;
+    }
+    .song_list ul {
+        font-size: 14.5px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 63px;
+    }
+    nav div {
+        font-size: 22px;
+    }
+    .album_data h1 {
+        font-size: 36px;
+    }
+    .album_data h2 {
+        font-size: 22px;
+    }
+    .musicians,
+    .album_description,
+    .song_list h2,
+    .anecdotes,
+    footer {
+        font-size: 13.5px;
+    }
+    .song_list ul {
+        font-size: 11.5px;
     }
 
 }
@@ -365,7 +399,6 @@ footer {
     }
     .harrys_house_producer {
         grid-column: 2;
-        height: 80px;
     }
     .streams {
         grid-column: 3;
@@ -376,10 +409,30 @@ footer {
     }
     .fine_line_producer {
         grid-column: 2 / span 2;
-        height: 80px;
     }
     .most_popular_song {
         border-radius: 15px 15px 0 15px;
+    }
+    nav div {
+        font-size: 3vw;
+    }
+    .song_list h2 {
+        font-size: 3.2vw;
+    }
+    .song_list ul {
+        font-size: 1.7vw;
+    }
+    .album_data h1 {
+        font-size: 5vw;
+    }
+    .album_data h2 {
+        font-size: 3.5vw;
+    }
+    .album_description,
+    .musicians,
+    .anecdotes
+    footer {
+        font-size: 2vw;
     }
 }
 
@@ -425,6 +478,19 @@ footer {
     }
     .fine_line_producer {
         grid-column: 1 / span 2;
+    }
+    header h1 {
+        font-size: 15vw;
+    }
+    .album_data h1 {
+        font-size: 7vw;
+    }
+    .album_data h2 {
+        font-size: 5vw;
+    }
+    .musicians,
+    .album_description {
+        font-size: 3.5vw;
     }
 
 }
